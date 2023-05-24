@@ -5,7 +5,7 @@
         <q-icon name="note" color="blue-grey" />
       </q-item-section>
       <q-item-section>
-        <q-item-label class="text-h4">{{ title }}</q-item-label>
+        <q-item-label class="text-h5">{{ title }}</q-item-label>
         <!-- <q-item-label caption> {{ title }} </q-item-label> -->
       </q-item-section>
     </q-item>

@@ -21,7 +21,7 @@ export default defineComponent({
   <q-page padding>
     <Container>
       <div class="row items-center justify-between">
-        <h3>Your notes</h3>
+        <h3 class="text-blue-grey-9">Your notes</h3>
         <div>
           <q-btn round color="positive" icon="add" to="/new"></q-btn>
         </div>

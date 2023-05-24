@@ -1,12 +1,9 @@
 <template>
-  <q-card class="my-card" flat bordered @click="$emit('click', $event)">
+  <q-card class="my-card q-my-lg" flat bordered @click="$emit('click', $event)">
     <q-item>
       <q-item-section avatar>
-        <q-avatar>
-          <img src="../assets/happy-emoji.svg" />
-        </q-avatar>
+        <q-icon name="note" color="blue-grey" />
       </q-item-section>
-
       <q-item-section>
         <q-item-label>{{ title }}</q-item-label>
         <!-- <q-item-label caption> {{ title }} </q-item-label> -->

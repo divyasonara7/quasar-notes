@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A Quasar Framework app",
   "productName": "Quasar App",
-  "author": "Justin Brooks <jsbroks@gmail.com>",
+  "author": "Divya Sonara <divyasonara7105@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "quasar dev",

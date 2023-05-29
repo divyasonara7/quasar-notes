@@ -12,10 +12,8 @@
 
     <q-separator />
 
-    <q-card-section horizontal>
-      <q-card-section class="col-4">
-        {{ description }}
-      </q-card-section>
+    <q-card-section class="col-12">
+      {{ description }}
     </q-card-section>
   </q-card>
 </template>

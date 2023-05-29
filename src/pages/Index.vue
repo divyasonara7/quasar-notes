@@ -34,7 +34,17 @@ export default defineComponent({
         :description="description"
         @click="router.push(`/note/${idx}`)"
       />
-      <div v-if="notes.length === 0">You have not created any notes.</div>
+      <div class="no-notes absolute-center" v-if="notes.length === 0">
+        <q-icon name="check" size="100px" color="primary" />
+        <div class="text-h5 text-primary text-center">
+          You have not created any notes.
+        </div>
+      </div>
     </Container>
   </q-page>
 </template>
+<style scoped>
+.no-notes {
+  opacity: 0.5;
+}
+</style>

@@ -10,6 +10,7 @@ export default defineComponent({
   setup() {
     const router = useRouter()
     const notes = useLocalNotes()
+    const $q = useQuasar()
 
     const note = reactive({
       title: '',
@@ -25,6 +26,10 @@ export default defineComponent({
       })
 
       router.push('/')
+      $q.notify({
+        type: 'positive',
+        message: 'Note added successfully.'
+      })
 
       note.title = ''
       note.description = ''

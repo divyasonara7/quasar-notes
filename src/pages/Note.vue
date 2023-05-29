@@ -9,6 +9,8 @@ export default {
   setup() {
     const notes = useLocalNotes()
     const route = useRoute()
+    const $q = useQuasar()
+
     const noteId = computed(() => parseInt(route.params.id))
     const note = computed(() => notes.value[noteId.value])
 
@@ -16,6 +18,10 @@ export default {
     const remove = () => {
       notes.value.splice(noteId.value, 1)
       router.push('/')
+      $q.notify({
+        type: 'negative',
+        message: 'Note deleted successfully.'
+      })
     }
 
     const editing = ref(false)

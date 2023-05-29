@@ -3,6 +3,7 @@ import Container from 'src/components/Container.vue'
 import { defineComponent, reactive } from 'vue'
 import { useLocalNotes } from 'src/helper'
 import { useRouter } from 'vue-router'
+import { useQuasar } from 'quasar'
 
 export default defineComponent({
   components: { Container },

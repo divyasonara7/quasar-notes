@@ -3,6 +3,7 @@ import { computed, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useLocalNotes } from 'src/helper'
 import Container from 'src/components/Container.vue'
+import { useQuasar } from 'quasar'
 
 export default {
   components: { Container },

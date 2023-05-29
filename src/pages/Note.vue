@@ -17,11 +17,18 @@ export default {
 
     const router = useRouter()
     const remove = () => {
-      notes.value.splice(noteId.value, 1)
-      router.push('/')
-      $q.notify({
-        type: 'negative',
-        message: 'Note deleted successfully.'
+      $q.dialog({
+        title: 'Alert',
+        message: 'Are you sure want to delete task?',
+        cancel: true,
+        persistent: true
+      }).onOk(() => {
+        notes.value.splice(noteId.value, 1)
+        router.push('/')
+        $q.notify({
+          type: 'negative',
+          message: 'Note deleted successfully.'
+        })
       })
     }
 
